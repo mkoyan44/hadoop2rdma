@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.permissions</name>
+    <value>false</value>
+  </property>
+  <property>
+   <name>dfs.datanode.data.dir</name>
+   <value>/tmp/hadoop/hdfs/datanode</value>
+  </property>
+  <property>
+  	<name>dfs.datanode.dns.interface</name>
+  	<value>ib0</value>
+  </property>
+  <property>
+     <name>dfs.blocksize</name>
+     <value>BLOCK</value>
+  </property>
+</configuration>

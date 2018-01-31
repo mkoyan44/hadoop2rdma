@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+ <name>mapreduce.jobtracker.address</name>
+ <value>master:54311</value>
+</property>
+
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+
+<property>
+ 	<name>mapreduce.shuffle.provider.plugin.classes</name>
+ 	<value>com.mellanox.hadoop.mapred.UdaShuffleProviderPlugin,
+ 			org.apache.hadoop.mapred.TaskTracker$DefaultShuffleProvider</value>
+ </property>
+ <property>
+  <name>mapred.tasktracker.dns.interface</name>
+  <value>ib0</value>
+ </property>
+
+
+
+
+ <property>
+  <name>mapred.tasktracker.reduce.tasks.maximum</name>
+  <value>16</value>
+ </property>
+ 
+
+ <property>
+  <name>mapred.tasktracker.map.tasks.maximum</name>
+  <value>4</value>
+ </property>
+
+ 
+</configuration>
